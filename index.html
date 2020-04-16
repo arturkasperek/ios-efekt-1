@@ -25,8 +25,128 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>iOS - efekt 1</h2><br />
+					<h5>Autor - Artur Kasperek</h5>
+				</section>
+				<section>
+					<h2>Porównanie technologiczne</h2>
+					<ul>
+						<li>Swift ( natywne ) vs</li>
+						<li>React Native vs</li>
+						<li>Cordova</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Sposób generowania GUI</h2>
+					</section>
+					<section>
+						<h2>Swift</h2>
+						<div>
+							<span>GUI w tym przypadku jest generowane natywnie. To znaczy, że tworząc różne elementy jak przyciski, obrazki czy też pola tekstowe używamy natywnych elementów dla systemu operacyjnego. Nasz kod jest bezpośrednio związany z tymi elementami bez żadnych pośredników</span>
+						</div>
+					</section>
+					<section>
+						<h2>React Native</h2>
+						<div>
+							<span>Podobnie jak w przypadku Swifta elementy są natywne. Interakcja z elementami ( np onClick ) nie jest już bezpośrednia jak w przypadku swifta, wymaga pośrednika</span>
+						</div>
+					</section>
+					<section>
+						<h2>Cordova</h2>
+						<div>
+							<span>Elementy GUI nie są natywne. Elementy GUI to elementy dostępne w przeglądarce. GUI jest renderowane przez przeglądarkę</span>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Współdziałanie z systemem</h2>
+					</section>
+					<section>
+						<h2>Swift</h2>
+						<div>
+							<span>Proces który zawiera logikę naszej aplikacji działa w natywny sposób i potrafi komunikować się bezpośrednio z logiką renderującą</span>
+						</div>
+					</section>
+					<section>
+						<h2>React Native</h2>
+						<div>
+							<span>Proces który zawiera logikę naszej aplikacji jest napisany w JS i jest odzielnym bytem. Istenieje dodatkowy pomost dzięki któremu proces w JSie może komunikować się z procesem natywnym</span>
+						</div>
+						<img src="obrazek1.png">
+					</section>
+					<section>
+						<h2>Cordova</h2>
+						<div>
+							<span>Podczas uruchamiania aplikacji w Cordovie jest uruchamiana przeglądarka. Podobnie jak w React Native jest to osobny byt. W przeciwieństwo do React Native renderowaniem GUI zajmuje się przeglądarka</span>
+						</div>
+						<img width="400" src="obrazek2.jpg">
+					</section>
+				</section>
+				<section>
+					<section>Język programowania</section>
+					<section>
+						<h2>Swift</h2>
+						<div>
+							Natywnym językiem dla Apple jest język Swift. Jest on kompilowany do natywnego kodu dla urządrzeń iOS. W tym celu kod swifta jest kompilowany do formatu pośredniego LLVM, dalej LLVM posiada wiele backendów które służą do generowania natywnego assembly
+						</div>
+					</section>
+					<section>
+						<h2>React Native</h2>
+						<div>
+							Używany tutaj języka progamowania JavaScript. Platforma na używanie innych języków, np TypeScript, ale muszą one być transpilowane do JavaScriptu. JavaScript który jest uruchominy na urządeniu mobilnym działa na silniku V8 który odpala nasz kod z logiką
+						</div>
+					</section>
+					<section>
+						<h2>Cordova</h2>
+						<div>
+							Tak samo jak w przypadku React Native mamy dostępny JavaScript oraz języki które się transpilują do JS, typu TypeScript. Dodatkowo możemy korzystać ze wszystkich języków które się kompilują do webAssembbly, np Rust albo C#. W każdym przypadku to przeglądarka zajmuje się uruchamianiem danego języka
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>Podgląd aplikacji</section>
+					<section>
+						<h2>Swift ( xCode )</h2>
+						<div>
+							Mamy dostępny designer do budowania UI, możemy odpalić w tle symulator iOS.
+						</div>
+						<img width="500" src="obrazek3.gif">
+					</section>
+					<section>
+						<h2>React Native</h2>
+						<div>
+							Nie ma możliwość użycia designera. Aplikacja w trybie developerskim daje nam dostęp do debugera oraz możemy robić inspeckję elementów
+						</div>
+						<img width="250" src="obrazek4.png">
+					</section>
+					<section>
+						<h2>Cordova</h2>
+						<div>
+							Nie ma możliwość użycia designera. Aplikację możemy odpalić w symulatorze, tam mamy dostęp do narzędzi deweloperskich przeglądarki
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>Wygoda/Wydajność przy robieniu Hello World w Swift</section>
+					<section>
+						TODO
+					</section>
+				</section>
+				<section>
+					<section>Wygoda/Wydajność przy robieniu Hello World w React Native</section>
+					<section>
+						TODO
+					</section>
+				</section>
+				<section>
+					<section>Wygoda/Wydajność przy robieniu Hello World w Cordova</section>
+					<section>
+						TODO
+					</section>
+				</section>
 			</div>
 		</div>
 
